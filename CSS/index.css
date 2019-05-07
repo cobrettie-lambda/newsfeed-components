@@ -30,13 +30,19 @@
   position: fixed;
   top: 0;
   z-index: 2;
-  animation: pulse 5s infinite;
+  animation-name: stretch;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
 }
 .header h1 {
   margin: 0;
   font-size: 48px;
 }
-@keyframes pulse {
+@keyframes stretch {
   0% {
     background-color: dodgerblue;
   }
