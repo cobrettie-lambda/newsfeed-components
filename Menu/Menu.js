@@ -4,6 +4,7 @@ const toggleMenu = () => {
   // Toggle the "menu--open" class on your menu refence. 
   // menu.classList.toggle('menu--open');
 
+  // menu animation - open to slide out from left, close to slide to left
   if (!menuActive) {
     menu.classList.toggle('menu--open');
     TweenMax.to(".menu", .6, {
@@ -11,8 +12,8 @@ const toggleMenu = () => {
     })
     menuActive = true;
   } else if (menuActive) {
-    TweenMax.to(".menu", .5, {
-      left: -500,
+    TweenMax.to(".menu", .6, {
+      left: -600,
     })
     menuActive = false;
     setTimeout(() => {
