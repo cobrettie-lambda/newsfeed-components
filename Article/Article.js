@@ -19,11 +19,14 @@ class Article {
 
   }
 
+  // Update text for opening and closing articles
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
     this.domElement.classList.toggle('article-open');
     if (this.expandButton.textContent === 'Click to expand') {
       this.expandButton.textContent = 'Click to close'
+    } else if (this.expandButton.textContent === 'Click to close') {
+      this.expandButton.textContent = 'Click to expand'
     }
   }
 }
