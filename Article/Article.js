@@ -30,9 +30,10 @@ class Article {
   // Update text for opening and closing articles
   expandArticle() {
     // Using our reference to the domElement, toggle a class to expand or hide the article.
-    // this.domElement.classList.toggle('article-open');
 
-
+    // Read button functionality to remove article after expanding/closing the article
+    // Press the remove button after expanding/closing the article to remove the article from the page
+    // Can ONLY remove the article after the article has been expanded
 
     if (this.expandButton.textContent === 'Click to expand') {
       this.expandButton.textContent = 'Click to close';
