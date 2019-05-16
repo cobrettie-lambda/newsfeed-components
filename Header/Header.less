@@ -10,8 +10,28 @@
   top: 0;
   z-index: 2;
 
+  // ADD ANIMATION
+  animation-name: stretch;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-delay: 0s;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+
   h1 {
     margin: 0;
     font-size: 48px;
+  }
+}
+
+// ANIMATION 
+@keyframes stretch {
+  0% {
+    background-color: dodgerblue;
+  }
+
+  100% {
+    background-color: indigo;
   }
 }
